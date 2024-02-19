@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Atico Real Estate</title>
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom ">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="logo.png" alt="logo" width="56" height="44">
+        </a>
+        <div class="col-md-3 text-end">
+            <a href="ProfilAgent.html"><button type="button" class="btn btn-outline-secondary me-2">Profil</button></a>
+        </div>
+
+        </header>
+
+        <div class="row">
+
+            <div class="row main col-sm-12">
+
+                <div class="filteri col-sm-3">
+                    <form>
+                        <div class="filterNaslov text-center border-bottom">
+                            <h4 class="h4">Primeni filtere</h4>
+                        </div>
+
+                        <!-- Opstina -->
+                        <div class="mb-3 mt-3">
+                            <label for="opstina" class="form-label"><b>Opstina</b></label>
+                            <select class="form-select" id="opstina">
+                                <option value="0" selected>Izaberite</option>
+                                <option value="1">Opstina 1</option>
+                                <option value="2">Opstina 2</option>
+                                <option value="3">Opstina 3</option>
+                            </select>
+                        </div>
+                            
+                        <!-- Broj soba -->
+                        <div class="mb-3">
+                            <label for="borjSoba" class="form-label"><b>Broj soba</b></label>
+                            <select class="form-select" id="borjSoba">
+                                <option value="0" selected>Izaberite</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5+</option>
+                            </select>
+                        </div>
+
+                        <!-- Kvadratura -->
+                        <div class="mb-3">
+                            <label for="kvadratura" class="form-label"><b>Kvadratura (m²)</b></label>
+                            <select class="form-select" id="kvadratura">
+                                <option value="0" selected>Izaberite</option>
+                                <option value="1">0-20</option>
+                                <option value="2">20-40</option>
+                                <option value="3">40-60</option>
+                                <option value="4">60-80</option>
+                                <option value="5">80-100</option>
+                                <option value="6">100-120</option>
+                                <option value="7">120-140</option>
+                                <option value="8">140+</option>
+                            </select>
+                        </div>
+
+                        <!-- Cena -->
+                        <div class="mb-3">
+                            <label for="cena" class="form-label"><b>Cena</b></label>
+                            <div class="row">
+                                <div class="col">
+                                  <input type="number" class="form-control" placeholder="Min" aria-label="Min">
+                                </div>
+                                <div class="col">
+                                  <input type="number" class="form-control" placeholder="Max" aria-label="Max">
+                                </div>
+                            </div>
+                        </div>
+
+                        <label for="cena" class="form-label"><b>Dodatne specifikacije</b></label>
+
+                        <!-- Dodatne specifikacije -->
+                        <div class="dodatneSpec mb-3">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="filter1">
+                                        <label class="form-check-label" for="filter1">Filter 1</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="filter2">
+                                        <label class="form-check-label" for="filter2">Filter 2</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="filter3">
+                                        <label class="form-check-label" for="filter3">Filter 3</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="filter4">
+                                        <label class="form-check-label" for="filter4">Filter 4</label>
+                                    </div>
+                                </div>
+                            </div><div class="row">
+                                <div class="col">
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="filter5">
+                                        <label class="form-check-label" for="filter5">Filter 5</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="filter6">
+                                        <label class="form-check-label" for="filter6">Filter 6</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="primeniFiltereDugme text-center mb-3">
+                            <button type="submit" class="btn btn-outline-secondary me-2">Primeni filtere</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="oglasi col-sm-9">
+
+                    <!-- ovaj deo se dohvata iz baze podataka sve do * -->
+                    <div class="card mb-3 mx-auto" style="max-width: 80%;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <a href="Oglas.html">
+                                    <img src="ki2.jpeg" class="img-fluid rounded-start" alt="slika">
+                                </a>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <h5 class="card-title">Apartman 3</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, omnis!</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button class="btn btn-outline-secondary">Oznaci kao prodato</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- * -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

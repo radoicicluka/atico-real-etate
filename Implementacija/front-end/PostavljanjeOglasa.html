@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Postavljanje oglasa</title>
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom ">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="logo.png" alt="logo" width="56" height="44">
+        </a>
+
+        <div class="col-md-3 text-end">
+            <a href="Profil.html"><button type="button" class="btn btn-outline-secondary me-2">Profil</button></a>
+        </div>
+        </header>
+
+        <div class="row">    
+
+            <div class="col-sm-12 text-center border-bottom">
+                <h3 class="h3">Postavljanje oglasa</h3>
+            </div>
+
+            <div class="row main col-sm-12">
+
+                <div class="col-sm-9 mx-auto">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputNaziv" class="form-label"><b>Naziv</b></label>
+                            <input type="text" class="form-control" id="inputNaziv" placeholder="Naziv oglasa">
+                          </div>
+                        <div class="col-md-6">
+                          <label for="inputAddress" class="form-label"><b>Adresa</b></label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="Unesite adresu">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="opstina" class="form-label"><b>Opstina</b></label>
+                            <select class="form-select" id="opstina">
+                                <option value="0" selected>Izaberite</option>
+                                <option value="1">Opstina 1</option>
+                                <option value="2">Opstina 2</option>
+                                <option value="3">Opstina 3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label"><b>Grad</b></label>
+                          <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="agencija" class="form-label"><b>Agencija</b></label>
+                            <select class="form-select" id="agencija">
+                                <option value="0" selected>Izaberite</option>
+                                <option value="1">Agencija 1</option>
+                                <option value="2">Agencija 2</option>
+                                <option value="3">Agencija 3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="inputCena" class="form-label"><b>Cena</b></label>
+                            <input type="number" class="form-control" id="inputCena" placeholder="Cena u €">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="inputCity" class="form-label"><b>Kvadratura (m²)</b></label>
+                            <select class="form-select" id="kvadratura">
+                                <option value="0" selected>Izaberite</option>
+                                <option value="1">0-20</option>
+                                <option value="2">20-40</option>
+                                <option value="3">40-60</option>
+                                <option value="4">60-80</option>
+                                <option value="5">80-100</option>
+                                <option value="6">100-120</option>
+                                <option value="7">120-140</option>
+                                <option value="8">140+</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="borjSoba" class="form-label"><b>Broj soba</b></label>
+                            <select class="form-select" id="borjSoba">
+                                <option value="0" selected>Izaberite</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5+</option>
+                            </select>
+                        </div>
+                        <div class="col-md-12 input-group">
+                            <span class="input-group-text">Opis</span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+
+                        <div class="input-group col-md-12">
+                            <label class="input-group-text" for="inputGroupFile01"><b>Slike</b></label>
+                            <input type="file" class="form-control" id="inputGroupFile01" multiple>
+                          </div>
+
+                        <label for="cena" class="form-label"><b>Dodatne specifikacije</b></label>
+                        <div class="col-md-3">
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="filter1">
+                                <label class="form-check-label" for="filter1">Filter 1</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="filter2">
+                                <label class="form-check-label" for="filter2">Filter 2</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="filter3">
+                                <label class="form-check-label" for="filter3">Filter 3</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="filter4">
+                                <label class="form-check-label" for="filter4">Filter 4</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 mx-auto">
+                            <button type="button" class="btn btn-outline-secondary" style="width: 100%;">Postavi oglas</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

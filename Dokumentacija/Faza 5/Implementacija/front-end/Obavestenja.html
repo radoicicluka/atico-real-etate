@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Atico Real Estate</title>
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-2 border-bottom ">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="logo.png" alt="logo" width="56" height="44">
+        </a>
+        <div class="col-md-3 text-end">
+          <!-- Profil dugme zavisi od toga ko je ulogovan na sajt! (Agent ili Klijent) -->
+          <a href="ProfilKlijent.html"><button type="button" class="btn btn-outline-secondary me-2">Profil</button></a>
+          <a href="Obavestenja.html"><button type="button" class="btn btn-outline-secondary me-2">Obavestenja</button></a>
+        </div>
+        </header>
+
+        <div class="row">
+            <div class="text-center border-bottom">
+                <h4 class="h4">Obavestenja</h4>
+            </div>
+            <div class="pristigliZahteviMain col-sm-12 row">
+                
+                <div class="col-sm-6 mx-auto">
+                    <table class="table  table-striped text-center mt-3">
+                        <thead>
+                          <tr>
+                            <th scope="col">Datum i vreme</th>
+                            <th scope="col">Obavestenja</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>19.5.2023 13:20</td>
+                            <td>Izmenjen <a href="Oglas.html">oglas</a> koji pratite!</td>
+                          </tr>
+                          <tr>
+                            <td>19.5.2023 15:20</td>
+                            <td>Zahtev za licitaciju odbijen!</td>
+                          </tr>
+                        </tbody>
+                    </table>
+
+                    <div style="text-align: center;">
+                        <button type="button" class="btn btn-outline-secondary">Obrisi</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

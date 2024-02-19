@@ -1,0 +1,28 @@
+Pre pokretanja testa za funkcionalnost mora biti ulogovan sledeci korisnik:
+1)Brisanje oglasa : admin - borabora@gmail.com sifra123
+2)Dodela agenta: admin - borabora@gmail.com sifra123
+3)Lajkovanje oglasa charleslec@gmail.com sifra123
+4)Logovanje gost
+5)Obavestenja: admin borabora@gmail.com sifra123
+6)Otkazivanje termina: nikola@gmai.com sifra123
+7)Pokretanje licitacije: klijent: senna@gmail.com 123456 agent: nikola@gmai.com sifra123
+8)Postavljanje oglasa charleslec@gmail.com sifra123
+9)Potvrda oglasa: admin borabora@gmail.com sifra123
+10)Praceni oglasi peterg@gmail.com sifra123
+11)Pracenje oglasa: charleslec@gmail.com sifra123
+12)Pregled oglasa za agenta: nikola@gmai.com sifra123
+13)Pregled omiljenih oglasa: peterg@gmail.com sifra123
+14)Pregled postavljenih oglasa: senna@gmail.com 123456
+15)Pretraga i filtriranje oglasa: gost
+16)Promena agenta: uspesna - admin borabora@gmail.com sifra123 || neuspesna- charleslec@gmail.com sifra123
+17)Promena informacija naloga: charleslec@gmail.com sifra123
+18)Promena informacija u oglasu: senna@gmail.com 123456
+19)Promena lozinke: charleslec@gmail.com sifra123
+20)Promena statusa oglasa: nikola@gmai.com sifra123
+21)Rad sa terminima
+22)Registracija - gost
+23)Uklanjanje korisnika - admin borabora@gmail.com sifra123
+24)Uporedjivanje oglasa - gost
+25)Zahtev za pokretanje licitacije - senna@gmail.com sifra123
+26)Zahtev za promenu agenta - senna@gmail.com sifra123
+27)Zakazivanje termina za razgledanje - charleslec@gmail.com sifra123
